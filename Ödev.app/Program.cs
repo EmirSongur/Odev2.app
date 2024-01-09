@@ -7,19 +7,19 @@
             Random rnd = new Random();
 
             Console.WriteLine("Başlangıç sayısını giriniz:");
-            byte start = byte.Parse(Console.ReadLine());
+            byte bas = byte.Parse(Console.ReadLine());
             Console.WriteLine("Bitiş sayısı giriniz:");
-            byte end = byte.Parse(Console.ReadLine());
+            byte son = byte.Parse(Console.ReadLine());
 
             Console.WriteLine("Sayı adeti gir:");
-            byte count = byte.Parse(Console.ReadLine());
+            byte sayac = byte.Parse(Console.ReadLine());
 
 
-            int[] numbers = new int[count];
+            int[] numbers = new int[sayac];
             int num;
             for (int i = 0; i < numbers.Length; i++)
             {
-                num = rnd.Next(start, end);
+                num = rnd.Next(bas, son);
                 if (i == 0)
                 {
                     numbers[i] = num;
